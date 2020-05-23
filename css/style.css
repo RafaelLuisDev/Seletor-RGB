@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+    height: 95vh;
+    color: #555555;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+}
+
+h1,
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px;
+    font-style: italic;
+}
+
+form div {
+    display: grid;
+    grid-template-columns: 33% 33% 10%;
+    margin: 10px;
+}
+
+form div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+form label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    font-weight: bold;
+}
+
+form input[type='text'] {
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(180, 180, 180);
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 8px;
+    margin: 15px;
+    background: grey;
+    outline: none;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    border-radius: 30px;
+}
+
+.slider:active,
+.slider:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+#divColor {
+    height: 10em;
+    width: 10em;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    color: whitesmoke;
+    text-align: center;
+    height: 4em;
+    line-height: 4em;
+    background-image: linear-gradient(to right, red, green, blue);
+}
+
+.love {
+    transition: color 0.7s linear;
+    font-size: 1.5em;
+}
+
+#devName {
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}

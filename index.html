@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TP Módulo 01 - IGTI Full Stack</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="https://kit.fontawesome.com/d03fcf76e8.js" crossorigin="anonymous"></script>
+        <style id="dinamicStyle"></style>
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Vanilla</h1>
+            <h2>Seletor de cores RGB</h2>
+        </header>
+        <main>
+            <form>
+                <div>
+                    <label>(R) Vermelho:</label>
+                    <input type="range" class="slider" min="0" max="255" name="red" id="red" />
+                    <input type="text" name="txtRed" id="txtRed" disabled />
+                </div>
+                <div>
+                    <label>(G) Verde:</label>
+                    <input type="range" class="slider" min="0" max="255" name="green" id="green" />
+                    <input type="text" name="txtGreen" id="txtGreen" disabled />
+                </div>
+                <div>
+                    <label>(B) Azul:</label>
+                    <input type="range" class="slider" min="0" max="255" name="blue" id="blue" />
+                    <input type="text" name="txtBlue" id="txtBlue" disabled />
+                </div>
+                <div>
+                    <div id="divColor"></div>
+                </div>
+            </form>
+        </main>
+        <footer>Desenvolvido com <i class="fas fa-heart love"></i> por <span id="devName">Rafael Luis</span></footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
